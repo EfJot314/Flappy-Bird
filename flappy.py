@@ -2,18 +2,14 @@ import pygame
 import sys
 import random
 from pygame.locals import *
+
 pygame.init()
+
 plansza = pygame.display.set_mode((600,600))
 pygame.display.set_caption('Flappy bird')
+
 zegar=pygame.time.Clock()
 FPS=60
-def resource_path(relative_path):
-    try:
-        base_path = sys._MEIPASS
-    except Exception:
-        base_path = os.path.abspath(".")
-
-    return os.path.join(base_path, relative_path)
 
 BLACK=(0,0,0)
 WHITE=(255,255,255)
